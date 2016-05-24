@@ -17,10 +17,17 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         
         var imgArray = [UIImage]()
-        for var x = 1; x <= 4; x++ {
-            let img = UIImage(named: "idle\(x).png")
-            imgArray.append(img!) 
         
+        for x in 0...4 {
+            let img = UIImage(named: "idle\(x).png")
+            
+            if img != nil {
+                print("Adding image.")
+                imgArray.append(img!)
+                
+            } else {
+                print("unable to add imagaes")
+            }
     }
         monsterImg.animationImages = imgArray
         monsterImg.animationDuration = 0.8
