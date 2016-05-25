@@ -10,30 +10,75 @@ import UIKit
 
 class ViewController: UIViewController {
     
-    @IBOutlet weak var monsterImg: UIImageView!
+    @IBOutlet weak var monsterImg: MonsterImg!
+    @IBOutlet weak var foodImg: DragImg!
+    @IBOutlet weak var heartImg: DragImg!
+    @IBOutlet weak var penalty1Img: UIImageView!
+    @IBOutlet weak var penalty2Img: UIImageView!
+    @IBOutlet weak var penalty3Img: UIImageView!
     
+    let DIM_ALPHA: CGFloat = 0.2
+    let OPAQUE: CGFloat = 1.0
+    let MAX_PENALTIES = 3
+    
+    var penalties = 0
+    var timer: NSTimer!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        var imgArray = [UIImage]()
+        foodImg.dropTarget = monsterImg
+        heartImg.dropTarget = monsterImg
         
-        for x in 0...4 {
-            let img = UIImage(named: "idle\(x).png")
-            
-            if img != nil {
-                print("Adding image.")
-                imgArray.append(img!)
-                
-            } else {
-                print("unable to add imagaes")
-            }
+        penalty1Img.alpha = DIM_ALPHA
+        penalty2Img.alpha = DIM_ALPHA
+        penalty3Img.alpha = DIM_ALPHA
+        
+        NSNotificationCenter.defaultCenter().addObserver(self, selector:
+            #selector(ViewController.itemDroppedOncharacter(_:)), name: "onTargetDropped", object: nil)
+        
+        startTimer()
     }
-        monsterImg.animationImages = imgArray
-        monsterImg.animationDuration = 0.8
-        monsterImg.animationRepeatCount = 0
-        monsterImg.startAnimating()
+    
+    func itemDroppedOncharacter(notif: AnyObject) {
+        
     }
-
+    
+    func startTimer() {
+        if timer != nil {
+            timer.invalidate()
+        }
+        
+        timer = NSTimer.scheduledTimerWithTimeInterval(3.0, target: self, selector: #selector(ViewController.changeGameState), userInfo: nil, repeats: true)
+    }
+    
+    func changeGameState() {
+        
+        penalties += 1
+        
+        if penalties == 1 {
+            penalty1Img.alpha = OPAQUE
+            penalty2Img.alpha = DIM_ALPHA
+        } else if penalties == 2 {
+            penalty2Img.alpha = OPAQUE
+            penalty3Img.alpha = DIM_ALPHA
+        } else if penalties >= 3 {
+            penalty3Img.alpha = OPAQUE
+        } else {
+            penalty1Img.alpha = DIM_ALPHA
+            penalty2Img.alpha = DIM_ALPHA
+            penalty3Img.alpha = DIM_ALPHA
+        }
+        
+        if penalties >= MAX_PENALTIES {
+            gameOver()
+        }
+    }
+    
+    func gameOver() {
+        timer.invalidate()
+        monsterImg.playDeathAnimation()
+    
+    }
 }
 

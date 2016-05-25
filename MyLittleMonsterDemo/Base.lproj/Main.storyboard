@@ -34,8 +34,8 @@
                                     <constraint firstAttribute="height" constant="78" id="MiD-kH-SIY"/>
                                 </constraints>
                             </imageView>
-                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="32" translatesAutoresizingMaskIntoConstraints="NO" id="vgE-Lk-VMX">
-                                <rect key="frame" x="214" y="23" width="174" height="57"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" misplaced="YES" distribution="fillEqually" spacing="32" translatesAutoresizingMaskIntoConstraints="NO" id="vgE-Lk-VMX">
+                                <rect key="frame" x="214" y="23" width="166" height="57"/>
                                 <subviews>
                                     <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="skull" translatesAutoresizingMaskIntoConstraints="NO" id="WcZ-f9-hQt">
                                         <rect key="frame" x="0.0" y="0.0" width="34" height="57"/>
@@ -45,14 +45,14 @@
                                         </constraints>
                                     </imageView>
                                     <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="skull" translatesAutoresizingMaskIntoConstraints="NO" id="C2T-rE-04R">
-                                        <rect key="frame" x="70" y="0.0" width="34" height="57"/>
+                                        <rect key="frame" x="66" y="0.0" width="34" height="57"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="34" id="AiE-ru-MAH"/>
                                             <constraint firstAttribute="height" constant="57" id="wKZ-JM-tyH"/>
                                         </constraints>
                                     </imageView>
                                     <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="skull" translatesAutoresizingMaskIntoConstraints="NO" id="gUA-tW-DeX">
-                                        <rect key="frame" x="140" y="0.0" width="34" height="57"/>
+                                        <rect key="frame" x="132" y="0.0" width="34" height="57"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="57" id="QZG-RN-x9N"/>
                                             <constraint firstAttribute="width" constant="34" id="ZLT-G1-X6m"/>
@@ -60,20 +60,20 @@
                                     </imageView>
                                 </subviews>
                             </stackView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="idle1" translatesAutoresizingMaskIntoConstraints="NO" id="QU8-dj-GEZ">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="idle1" translatesAutoresizingMaskIntoConstraints="NO" id="QU8-dj-GEZ" customClass="MonsterImg" customModule="MyLittleMonsterDemo" customModuleProvider="target">
                                 <rect key="frame" x="-22" y="185" width="524" height="379"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="524" id="Fjf-Zd-3ze"/>
                                     <constraint firstAttribute="height" constant="379" id="c1N-Eb-i9T"/>
                                 </constraints>
                             </imageView>
-                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="100" translatesAutoresizingMaskIntoConstraints="NO" id="spM-OO-fiT">
+                            <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" distribution="fillEqually" spacing="100" translatesAutoresizingMaskIntoConstraints="NO" id="spM-OO-fiT">
                                 <rect key="frame" x="155" y="106" width="290" height="98"/>
                                 <subviews>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="food" translatesAutoresizingMaskIntoConstraints="NO" id="SMn-Vd-g9R">
+                                    <imageView contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" image="food" translatesAutoresizingMaskIntoConstraints="NO" id="SMn-Vd-g9R" customClass="DragImg" customModule="MyLittleMonsterDemo" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="0.0" width="95" height="98"/>
                                     </imageView>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="heart" translatesAutoresizingMaskIntoConstraints="NO" id="Kg9-4r-JGD">
+                                    <imageView contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" image="heart" translatesAutoresizingMaskIntoConstraints="NO" id="Kg9-4r-JGD" customClass="DragImg" customModule="MyLittleMonsterDemo" customModuleProvider="target">
                                         <rect key="frame" x="195" y="0.0" width="95" height="98"/>
                                     </imageView>
                                 </subviews>
@@ -135,7 +135,12 @@
                         </variation>
                     </view>
                     <connections>
+                        <outlet property="foodImg" destination="SMn-Vd-g9R" id="DpF-Ee-n9f"/>
+                        <outlet property="heartImg" destination="Kg9-4r-JGD" id="Wnu-cK-9UF"/>
                         <outlet property="monsterImg" destination="QU8-dj-GEZ" id="axJ-UW-9qS"/>
+                        <outlet property="penalty1Img" destination="WcZ-f9-hQt" id="nge-Po-Skw"/>
+                        <outlet property="penalty2Img" destination="C2T-rE-04R" id="waD-n2-I16"/>
+                        <outlet property="penalty3Img" destination="gUA-tW-DeX" id="lFV-be-t03"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>

@@ -14,6 +14,8 @@
 		9FCD9AC71CED3E790091AFC0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9FCD9AC51CED3E790091AFC0 /* LaunchScreen.storyboard */; };
 		9FCD9AD21CED3E790091AFC0 /* MyLittleMonsterDemoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FCD9AD11CED3E790091AFC0 /* MyLittleMonsterDemoTests.swift */; };
 		9FCD9ADD1CED3E790091AFC0 /* MyLittleMonsterDemoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FCD9ADC1CED3E790091AFC0 /* MyLittleMonsterDemoUITests.swift */; };
+		9FE5EF8A1CF50D8F00855868 /* DragImg.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FE5EF891CF50D8F00855868 /* DragImg.swift */; };
+		9FE5EF8C1CF626D900855868 /* MonsterImg.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FE5EF8B1CF626D900855868 /* MonsterImg.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +49,8 @@
 		9FCD9AD81CED3E790091AFC0 /* MyLittleMonsterDemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MyLittleMonsterDemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		9FCD9ADC1CED3E790091AFC0 /* MyLittleMonsterDemoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyLittleMonsterDemoUITests.swift; sourceTree = "<group>"; };
 		9FCD9ADE1CED3E790091AFC0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9FE5EF891CF50D8F00855868 /* DragImg.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DragImg.swift; sourceTree = "<group>"; };
+		9FE5EF8B1CF626D900855868 /* MonsterImg.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MonsterImg.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,6 +104,8 @@
 			children = (
 				9FCD9ABC1CED3E790091AFC0 /* AppDelegate.swift */,
 				9FCD9ABE1CED3E790091AFC0 /* ViewController.swift */,
+				9FE5EF8B1CF626D900855868 /* MonsterImg.swift */,
+				9FE5EF891CF50D8F00855868 /* DragImg.swift */,
 				9FCD9AC31CED3E790091AFC0 /* Assets.xcassets */,
 				9FCD9AC51CED3E790091AFC0 /* LaunchScreen.storyboard */,
 				9FCD9AC81CED3E790091AFC0 /* Info.plist */,
@@ -256,6 +262,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9FE5EF8C1CF626D900855868 /* MonsterImg.swift in Sources */,
+				9FE5EF8A1CF50D8F00855868 /* DragImg.swift in Sources */,
 				9FCD9ABF1CED3E790091AFC0 /* ViewController.swift in Sources */,
 				9FCD9ABD1CED3E790091AFC0 /* AppDelegate.swift in Sources */,
 			);
@@ -485,6 +493,7 @@
 				9FCD9AE31CED3E790091AFC0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		9FCD9AE41CED3E790091AFC0 /* Build configuration list for PBXNativeTarget "MyLittleMonsterDemoTests" */ = {
 			isa = XCConfigurationList;
@@ -493,6 +502,7 @@
 				9FCD9AE61CED3E790091AFC0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		9FCD9AE71CED3E790091AFC0 /* Build configuration list for PBXNativeTarget "MyLittleMonsterDemoUITests" */ = {
 			isa = XCConfigurationList;
@@ -501,6 +511,7 @@
 				9FCD9AE91CED3E790091AFC0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
