@@ -16,6 +16,11 @@
 		9FCD9ADD1CED3E790091AFC0 /* MyLittleMonsterDemoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FCD9ADC1CED3E790091AFC0 /* MyLittleMonsterDemoUITests.swift */; };
 		9FE5EF8A1CF50D8F00855868 /* DragImg.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FE5EF891CF50D8F00855868 /* DragImg.swift */; };
 		9FE5EF8C1CF626D900855868 /* MonsterImg.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FE5EF8B1CF626D900855868 /* MonsterImg.swift */; };
+		9FE5EF921CF69AD500855868 /* bite.wav in Resources */ = {isa = PBXBuildFile; fileRef = 9FE5EF8D1CF69AD500855868 /* bite.wav */; };
+		9FE5EF931CF69AD500855868 /* cave-music.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 9FE5EF8E1CF69AD500855868 /* cave-music.mp3 */; };
+		9FE5EF941CF69AD500855868 /* death.wav in Resources */ = {isa = PBXBuildFile; fileRef = 9FE5EF8F1CF69AD500855868 /* death.wav */; };
+		9FE5EF951CF69AD500855868 /* heart.wav in Resources */ = {isa = PBXBuildFile; fileRef = 9FE5EF901CF69AD500855868 /* heart.wav */; };
+		9FE5EF961CF69AD500855868 /* skull.wav in Resources */ = {isa = PBXBuildFile; fileRef = 9FE5EF911CF69AD500855868 /* skull.wav */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +56,11 @@
 		9FCD9ADE1CED3E790091AFC0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9FE5EF891CF50D8F00855868 /* DragImg.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DragImg.swift; sourceTree = "<group>"; };
 		9FE5EF8B1CF626D900855868 /* MonsterImg.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MonsterImg.swift; sourceTree = "<group>"; };
+		9FE5EF8D1CF69AD500855868 /* bite.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = bite.wav; path = mylittlemonsterart/bite.wav; sourceTree = "<group>"; };
+		9FE5EF8E1CF69AD500855868 /* cave-music.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = "cave-music.mp3"; path = "mylittlemonsterart/cave-music.mp3"; sourceTree = "<group>"; };
+		9FE5EF8F1CF69AD500855868 /* death.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = death.wav; path = mylittlemonsterart/death.wav; sourceTree = "<group>"; };
+		9FE5EF901CF69AD500855868 /* heart.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = heart.wav; path = mylittlemonsterart/heart.wav; sourceTree = "<group>"; };
+		9FE5EF911CF69AD500855868 /* skull.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = skull.wav; path = mylittlemonsterart/skull.wav; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -82,6 +92,7 @@
 			isa = PBXGroup;
 			children = (
 				9FCD9AC01CED3E790091AFC0 /* Main.storyboard */,
+				9FE5EF971CF69AEC00855868 /* Sounds */,
 				9FCD9ABB1CED3E790091AFC0 /* MyLittleMonsterDemo */,
 				9FCD9AD01CED3E790091AFC0 /* MyLittleMonsterDemoTests */,
 				9FCD9ADB1CED3E790091AFC0 /* MyLittleMonsterDemoUITests */,
@@ -129,6 +140,18 @@
 				9FCD9ADE1CED3E790091AFC0 /* Info.plist */,
 			);
 			path = MyLittleMonsterDemoUITests;
+			sourceTree = "<group>";
+		};
+		9FE5EF971CF69AEC00855868 /* Sounds */ = {
+			isa = PBXGroup;
+			children = (
+				9FE5EF8D1CF69AD500855868 /* bite.wav */,
+				9FE5EF8E1CF69AD500855868 /* cave-music.mp3 */,
+				9FE5EF8F1CF69AD500855868 /* death.wav */,
+				9FE5EF901CF69AD500855868 /* heart.wav */,
+				9FE5EF911CF69AD500855868 /* skull.wav */,
+			);
+			name = Sounds;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -235,6 +258,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9FE5EF961CF69AD500855868 /* skull.wav in Resources */,
+				9FE5EF921CF69AD500855868 /* bite.wav in Resources */,
+				9FE5EF941CF69AD500855868 /* death.wav in Resources */,
+				9FE5EF951CF69AD500855868 /* heart.wav in Resources */,
+				9FE5EF931CF69AD500855868 /* cave-music.mp3 in Resources */,
 				9FCD9AC71CED3E790091AFC0 /* LaunchScreen.storyboard in Resources */,
 				9FCD9AC41CED3E790091AFC0 /* Assets.xcassets in Resources */,
 				9FCD9AC21CED3E790091AFC0 /* Main.storyboard in Resources */,
