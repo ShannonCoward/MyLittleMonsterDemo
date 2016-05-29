@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9F6069981CF6BAA50046957A /* ViewDelay.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F6069971CF6BAA50046957A /* ViewDelay.swift */; };
 		9FCD9ABD1CED3E790091AFC0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FCD9ABC1CED3E790091AFC0 /* AppDelegate.swift */; };
 		9FCD9ABF1CED3E790091AFC0 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FCD9ABE1CED3E790091AFC0 /* ViewController.swift */; };
 		9FCD9AC21CED3E790091AFC0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9FCD9AC01CED3E790091AFC0 /* Main.storyboard */; };
@@ -41,9 +42,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		9F6069971CF6BAA50046957A /* ViewDelay.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewDelay.swift; sourceTree = "<group>"; };
 		9FCD9AB91CED3E790091AFC0 /* MyLittleMonsterDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyLittleMonsterDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9FCD9ABC1CED3E790091AFC0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		9FCD9ABE1CED3E790091AFC0 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		9FCD9ABE1CED3E790091AFC0 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ViewController.swift; path = MyLittleMonsterDemo/ViewController.swift; sourceTree = "<group>"; };
 		9FCD9AC11CED3E790091AFC0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		9FCD9AC31CED3E790091AFC0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9FCD9AC61CED3E790091AFC0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -54,8 +56,8 @@
 		9FCD9AD81CED3E790091AFC0 /* MyLittleMonsterDemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MyLittleMonsterDemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		9FCD9ADC1CED3E790091AFC0 /* MyLittleMonsterDemoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyLittleMonsterDemoUITests.swift; sourceTree = "<group>"; };
 		9FCD9ADE1CED3E790091AFC0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		9FE5EF891CF50D8F00855868 /* DragImg.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DragImg.swift; sourceTree = "<group>"; };
-		9FE5EF8B1CF626D900855868 /* MonsterImg.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MonsterImg.swift; sourceTree = "<group>"; };
+		9FE5EF891CF50D8F00855868 /* DragImg.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DragImg.swift; path = MyLittleMonsterDemo/DragImg.swift; sourceTree = "<group>"; };
+		9FE5EF8B1CF626D900855868 /* MonsterImg.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MonsterImg.swift; path = MyLittleMonsterDemo/MonsterImg.swift; sourceTree = "<group>"; };
 		9FE5EF8D1CF69AD500855868 /* bite.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = bite.wav; path = mylittlemonsterart/bite.wav; sourceTree = "<group>"; };
 		9FE5EF8E1CF69AD500855868 /* cave-music.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = "cave-music.mp3"; path = "mylittlemonsterart/cave-music.mp3"; sourceTree = "<group>"; };
 		9FE5EF8F1CF69AD500855868 /* death.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = death.wav; path = mylittlemonsterart/death.wav; sourceTree = "<group>"; };
@@ -92,8 +94,11 @@
 			isa = PBXGroup;
 			children = (
 				9FCD9AC01CED3E790091AFC0 /* Main.storyboard */,
+				9FE5EF991CF6A7C300855868 /* Model */,
+				9FE5EF9A1CF6A7E100855868 /* View */,
+				9FE5EF9B1CF6A7FE00855868 /* Controller */,
 				9FE5EF971CF69AEC00855868 /* Sounds */,
-				9FCD9ABB1CED3E790091AFC0 /* MyLittleMonsterDemo */,
+				9FCD9ABB1CED3E790091AFC0 /* SuppFiles */,
 				9FCD9AD01CED3E790091AFC0 /* MyLittleMonsterDemoTests */,
 				9FCD9ADB1CED3E790091AFC0 /* MyLittleMonsterDemoUITests */,
 				9FCD9ABA1CED3E790091AFC0 /* Products */,
@@ -110,17 +115,15 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		9FCD9ABB1CED3E790091AFC0 /* MyLittleMonsterDemo */ = {
+		9FCD9ABB1CED3E790091AFC0 /* SuppFiles */ = {
 			isa = PBXGroup;
 			children = (
 				9FCD9ABC1CED3E790091AFC0 /* AppDelegate.swift */,
-				9FCD9ABE1CED3E790091AFC0 /* ViewController.swift */,
-				9FE5EF8B1CF626D900855868 /* MonsterImg.swift */,
-				9FE5EF891CF50D8F00855868 /* DragImg.swift */,
 				9FCD9AC31CED3E790091AFC0 /* Assets.xcassets */,
 				9FCD9AC51CED3E790091AFC0 /* LaunchScreen.storyboard */,
 				9FCD9AC81CED3E790091AFC0 /* Info.plist */,
 			);
+			name = SuppFiles;
 			path = MyLittleMonsterDemo;
 			sourceTree = "<group>";
 		};
@@ -152,6 +155,31 @@
 				9FE5EF911CF69AD500855868 /* skull.wav */,
 			);
 			name = Sounds;
+			sourceTree = "<group>";
+		};
+		9FE5EF991CF6A7C300855868 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				9FE5EF891CF50D8F00855868 /* DragImg.swift */,
+				9F6069971CF6BAA50046957A /* ViewDelay.swift */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		9FE5EF9A1CF6A7E100855868 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				9FE5EF8B1CF626D900855868 /* MonsterImg.swift */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		9FE5EF9B1CF6A7FE00855868 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				9FCD9ABE1CED3E790091AFC0 /* ViewController.swift */,
+			);
+			name = Controller;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -292,6 +320,7 @@
 			files = (
 				9FE5EF8C1CF626D900855868 /* MonsterImg.swift in Sources */,
 				9FE5EF8A1CF50D8F00855868 /* DragImg.swift in Sources */,
+				9F6069981CF6BAA50046957A /* ViewDelay.swift in Sources */,
 				9FCD9ABF1CED3E790091AFC0 /* ViewController.swift in Sources */,
 				9FCD9ABD1CED3E790091AFC0 /* AppDelegate.swift in Sources */,
 			);

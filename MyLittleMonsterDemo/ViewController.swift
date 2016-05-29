@@ -17,6 +17,7 @@ class ViewController: UIViewController {
     @IBOutlet weak var penalty1Img: UIImageView!
     @IBOutlet weak var penalty2Img: UIImageView!
     @IBOutlet weak var penalty3Img: UIImageView!
+    @IBOutlet weak var gameOvrImg: UIImageView!
     
     let DIM_ALPHA: CGFloat = 0.2 // Barely Visible
     let OPAQUE: CGFloat = 1.0  // Fully Visible
@@ -44,6 +45,8 @@ class ViewController: UIViewController {
         penalty1Img.alpha = DIM_ALPHA
         penalty2Img.alpha = DIM_ALPHA
         penalty3Img.alpha = DIM_ALPHA
+        
+        gameOvrImg.hidden = true
         
         NSNotificationCenter.defaultCenter().addObserver(self, selector:
             #selector(ViewController.itemDroppedOncharacter(_:)), name: "onTargetDropped", object: nil)
@@ -151,6 +154,8 @@ class ViewController: UIViewController {
         timer.invalidate()
         monsterImg.playDeathAnimation()
         sfxDeath.play()
+        gameOvrImg.hidden = false
+        musicPlayer.stop()
     
     }
 }

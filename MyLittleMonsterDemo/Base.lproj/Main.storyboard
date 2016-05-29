@@ -60,13 +60,6 @@
                                     </imageView>
                                 </subviews>
                             </stackView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="idle1" translatesAutoresizingMaskIntoConstraints="NO" id="QU8-dj-GEZ" customClass="MonsterImg" customModule="MyLittleMonsterDemo" customModuleProvider="target">
-                                <rect key="frame" x="-22" y="185" width="524" height="379"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="524" id="Fjf-Zd-3ze"/>
-                                    <constraint firstAttribute="height" constant="379" id="c1N-Eb-i9T"/>
-                                </constraints>
-                            </imageView>
                             <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" distribution="fillEqually" spacing="100" translatesAutoresizingMaskIntoConstraints="NO" id="spM-OO-fiT">
                                 <rect key="frame" x="155" y="106" width="290" height="98"/>
                                 <subviews>
@@ -92,16 +85,38 @@
                                     </mask>
                                 </variation>
                             </stackView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="idle1" translatesAutoresizingMaskIntoConstraints="NO" id="QU8-dj-GEZ" customClass="MonsterImg" customModule="MyLittleMonsterDemo" customModuleProvider="target">
+                                <rect key="frame" x="-22" y="185" width="524" height="379"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="524" id="Fjf-Zd-3ze"/>
+                                    <constraint firstAttribute="height" constant="379" id="c1N-Eb-i9T"/>
+                                </constraints>
+                            </imageView>
+                            <imageView hidden="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="gameover" translatesAutoresizingMaskIntoConstraints="NO" id="HdK-hQ-lFr">
+                                <rect key="frame" x="0.0" y="80" width="600" height="391"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="600" id="ISA-nC-Fzk"/>
+                                </constraints>
+                                <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="0.0" y="238" width="400" height="226"/>
+                                </variation>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstItem="NkN-rX-IAf" firstAttribute="top" secondItem="HdK-hQ-lFr" secondAttribute="bottom" constant="69" id="0mO-go-wOZ"/>
+                            <constraint firstItem="HdK-hQ-lFr" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="28" id="3Lt-2b-4hG"/>
+                            <constraint firstItem="HdK-hQ-lFr" firstAttribute="top" secondItem="vgE-Lk-VMX" secondAttribute="bottom" id="58j-HC-tya"/>
                             <constraint firstItem="NkN-rX-IAf" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="8ao-4K-fZm"/>
                             <constraint firstAttribute="trailing" secondItem="NkN-rX-IAf" secondAttribute="trailing" id="DCU-fS-cxB"/>
                             <constraint firstItem="BCH-Wg-3Lc" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="FoB-Px-AHK"/>
                             <constraint firstItem="spM-OO-fiT" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="8" id="INK-pj-xec"/>
+                            <constraint firstItem="HdK-hQ-lFr" firstAttribute="centerX" secondItem="spM-OO-fiT" secondAttribute="centerX" id="JZm-WT-ygf"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="NkN-rX-IAf" secondAttribute="bottom" id="Nu3-pU-gyj"/>
                             <constraint firstItem="QU8-dj-GEZ" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="-42" id="O9u-7t-6tR"/>
+                            <constraint firstItem="HdK-hQ-lFr" firstAttribute="top" secondItem="vgE-Lk-VMX" secondAttribute="bottom" id="OKf-vl-lHU"/>
                             <constraint firstAttribute="trailing" secondItem="BCH-Wg-3Lc" secondAttribute="trailing" id="P1a-2X-xGV"/>
+                            <constraint firstItem="HdK-hQ-lFr" firstAttribute="trailing" secondItem="NkN-rX-IAf" secondAttribute="trailing" id="PPe-X3-ma0"/>
                             <constraint firstItem="Zdm-Ar-l7i" firstAttribute="centerX" secondItem="BCH-Wg-3Lc" secondAttribute="centerX" id="PrO-IJ-0II"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="QU8-dj-GEZ" secondAttribute="bottom" constant="36" id="QHe-NX-pNC"/>
                             <constraint firstItem="spM-OO-fiT" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="SVE-MF-tvR"/>
@@ -109,13 +124,23 @@
                                 <variation key="heightClass=regular-widthClass=compact" constant="-3.5"/>
                             </constraint>
                             <constraint firstItem="spM-OO-fiT" firstAttribute="top" secondItem="Zdm-Ar-l7i" secondAttribute="bottom" constant="15" id="VGR-p6-CkX"/>
+                            <constraint firstItem="HdK-hQ-lFr" firstAttribute="leading" secondItem="NkN-rX-IAf" secondAttribute="leading" id="WyV-fn-XnY"/>
                             <constraint firstItem="vgE-Lk-VMX" firstAttribute="centerY" secondItem="Zdm-Ar-l7i" secondAttribute="centerY" constant="1" id="Y9Y-Yf-Zmd"/>
+                            <constraint firstItem="HdK-hQ-lFr" firstAttribute="leading" secondItem="NkN-rX-IAf" secondAttribute="leading" id="hMs-Rr-Txt"/>
+                            <constraint firstItem="NkN-rX-IAf" firstAttribute="top" secondItem="HdK-hQ-lFr" secondAttribute="bottom" constant="69" id="kQd-zt-qjr"/>
+                            <constraint firstItem="HdK-hQ-lFr" firstAttribute="top" secondItem="vgE-Lk-VMX" secondAttribute="bottom" id="lZe-eF-sJH"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="HdK-hQ-lFr" secondAttribute="trailing" constant="58" id="mll-58-qPs"/>
                             <constraint firstItem="Zdm-Ar-l7i" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" constant="13" id="n3z-Zh-V9S"/>
+                            <constraint firstItem="HdK-hQ-lFr" firstAttribute="centerX" secondItem="spM-OO-fiT" secondAttribute="centerX" id="nhM-MM-BpR"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="BCH-Wg-3Lc" secondAttribute="bottom" id="pES-CA-XSj"/>
                             <constraint firstItem="spM-OO-fiT" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="sUy-Ge-LbS"/>
+                            <constraint firstItem="HdK-hQ-lFr" firstAttribute="trailing" secondItem="NkN-rX-IAf" secondAttribute="trailing" id="sxN-05-OmZ"/>
                             <constraint firstItem="BCH-Wg-3Lc" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="wwn-Jw-y78"/>
                         </constraints>
                         <variation key="default">
+                            <mask key="subviews">
+                                <exclude reference="HdK-hQ-lFr"/>
+                            </mask>
                             <mask key="constraints">
                                 <exclude reference="INK-pj-xec"/>
                                 <exclude reference="SVE-MF-tvR"/>
@@ -129,6 +154,9 @@
                             </mask>
                         </variation>
                         <variation key="heightClass=regular-widthClass=compact">
+                            <mask key="subviews">
+                                <include reference="HdK-hQ-lFr"/>
+                            </mask>
                             <mask key="constraints">
                                 <include reference="sUy-Ge-LbS"/>
                             </mask>
@@ -136,6 +164,7 @@
                     </view>
                     <connections>
                         <outlet property="foodImg" destination="SMn-Vd-g9R" id="DpF-Ee-n9f"/>
+                        <outlet property="gameOvrImg" destination="HdK-hQ-lFr" id="sqg-1Y-FD4"/>
                         <outlet property="heartImg" destination="Kg9-4r-JGD" id="Wnu-cK-9UF"/>
                         <outlet property="monsterImg" destination="QU8-dj-GEZ" id="axJ-UW-9qS"/>
                         <outlet property="penalty1Img" destination="WcZ-f9-hQt" id="nge-Po-Skw"/>
@@ -145,12 +174,13 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="559" y="414"/>
+            <point key="canvasLocation" x="558" y="414"/>
         </scene>
     </scenes>
     <resources>
         <image name="bg" width="768" height="1024"/>
         <image name="food" width="95" height="98"/>
+        <image name="gameover" width="626" height="144"/>
         <image name="ground" width="1444" height="151"/>
         <image name="heart" width="95" height="98"/>
         <image name="idle1" width="889" height="615"/>
